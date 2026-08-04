@@ -17,7 +17,6 @@ const navItems = [
   { path: '/', label: '首页' },
   { path: '/tech', label: '技术部' },
   { path: '/volunteer', label: '志愿队' },
-  { path: '/ai', label: 'Ai助手' },
   { path: '/join', label: '加入我们' },
   { path: '/login', label: '登录' },
 ]
@@ -62,6 +61,17 @@ function closeMenu() {
         >
           {{ item.label }}
         </RouterLink>
+
+        <!-- 导航与新闻站 -->
+        <a
+          href="https://news.sxu-cnta.cn"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="ml-3 px-4 py-1.5 text-[15px] font-medium text-white bg-[#1677ff] dark:bg-blue-600 no-underline rounded-md transition-colors hover:bg-[#4096ff] dark:hover:bg-blue-500"
+          @click="closeMenu"
+        >
+          导航与新闻站
+        </a>
 
         <!-- Theme toggle -->
         <button
@@ -118,6 +128,16 @@ function closeMenu() {
       >
         {{ item.label }}
       </RouterLink>
+      <!-- 导航与新闻站（移动端） -->
+      <a
+        href="https://news.sxu-cnta.cn"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-full px-4 py-3 text-[17px] font-medium text-white bg-[#1677ff] dark:bg-blue-600 no-underline hover:bg-[#4096ff] dark:hover:bg-blue-500 rounded-md text-center"
+        @click="closeMenu"
+      >
+        导航与新闻站
+      </a>
       <!-- Mobile theme toggle -->
       <button
         v-if="theme"

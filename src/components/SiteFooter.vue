@@ -10,6 +10,16 @@
         <p>大同校区紫光楼</p>
         <p>现代教育技术学院</p>
         <p class="mt-2">&copy; 2015–2026 CNTA. All rights reserved.</p>
+        <p>
+          <a
+            href="https://beian.miit.gov.cn/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="hover:text-text dark:hover:text-white transition-colors"
+          >
+            晋ICP备19001447号-2
+          </a>
+        </p>
       </div>
     </div>
   </footer>
